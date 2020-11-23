@@ -1,0 +1,83 @@
+/* debug */
+.debug .row [class*="col-"] {
+    background-color: pink;
+    border: 1px solid black;
+  }
+  
+  .debug .row {
+    height: 80px;
+    /* line-height: 150px; */
+  }
+  
+  .debug .row [class*="col-"] {
+    height: 100%;
+    /* text-align:center; */
+  }
+  
+  .debug .row .row [class*="col-"] {
+    background-color: coral;
+    border: 2px solid white;
+  }
+  
+  .debug .row .row {
+    padding: 5px;
+  }
+
+  /* ... */
+  .text-center{
+      text-align: center;
+  }
+  .text-right{
+    text-align: right;
+}
+/* ... */
+
+  /* HEADER */
+  /* NavBar */
+  header .nav_bar{
+      height: 80px;
+      background-color: #29404e;
+  }
+  header .nav_bar h2,
+  header .nav_bar a{
+      color: white;
+      text-transform: uppercase;
+  }
+  header .nav_bar ul li{
+      display: inline;
+      list-style: none;
+      margin-right: 20px;
+      line-height: 80px;
+  }
+  /* Jumbotron */
+  header .jumbotron{
+      background: linear-gradient(45deg, #00a4bd, #00bda5);
+      height: 500px;
+  }
+
+  /* MAIN */
+  /* Portfolio section */
+  main section#portfolio{
+    background-color: lightgrey;
+    margin-bottom: 30px;
+}
+
+  /* About section */
+   main section#about{
+    background: linear-gradient(45deg, #00a4bd, #00bda5);
+    margin-bottom: 30px;
+   }
+
+   /* Contact section */
+   main section#contact{
+       background-color: lightgrey;
+       margin-bottom: 30px;
+   }
+
+   /* FOOTER */
+   footer .footer_top{
+       background-color: #33475b
+   }
+   footer .copyright{
+       background-color: #29404e;
+   }
