@@ -23,8 +23,17 @@
     padding: 5px;
   }
 
-  /* ... */
- 
+/* ... */
+ .btn{
+   border: 1px solid white;
+   padding: 5px 10px;
+   color: white;
+   margin-bottom: 20px;
+   font-size: 18px;
+ }
+ .btn:hover{
+   color: #2c3e50;
+ }
 /* ... */
 
   /* HEADER */
@@ -50,12 +59,13 @@
       margin-top: 50px;
   }
   /* Star with lines */
-  .jumbotron .my_star i{
+  .jumbotron .my_star i,
+  #about .my_star i{
     font-size: 30px;
     vertical-align: middle;
   }
- .jumbotron .my_star::before,
- .jumbotron .my_star::after{
+  .jumbotron .my_star::before,
+  .jumbotron .my_star::after{
       content: '';
       display: inline-block;
       width: 15%;
@@ -71,12 +81,12 @@
       background-color: lightgrey;
       margin-bottom: 30px;
 }
-#portfolio .my_star i{
-  font-size: 30px;
-  vertical-align: middle;
+  #portfolio .my_star i{
+    font-size: 30px;
+    vertical-align: middle;
 }
-#portfolio .my_star::before,
-#portfolio .my_star::after{
+  #portfolio .my_star::before,
+  #portfolio .my_star::after{
      content: '';
      display: inline-block;
      width: 15%;
@@ -85,7 +95,7 @@
      background-color: #333333;
      margin: 0 20px;
 }
-#portfolio img{
+  #portfolio img{
     width: 100%;
     margin: 10px 0;
     border-radius: 10px;
@@ -95,6 +105,25 @@
    main section#about{
       background: linear-gradient(45deg, #00a4bd, #00bda5);
       margin-bottom: 30px;
+      color: white;
+   }
+    #about .my_star::before,
+    #about .my_star::after{
+      content: '';
+      display: inline-block;
+      width: 15%;
+      height: 4px;
+      border-radius: 3px;
+      background-color: #fff;
+      margin: 0 20px;
+   }
+   main section#about p{
+     line-height: 1.6;
+     padding: 15px 0;
+     font-size: 19px;
+   }
+   main section#about button{
+     margin-bottom: 10px;
    }
 
    /* Contact section */
@@ -110,4 +139,15 @@
    footer .copyright{
        background-color: #2c3e50;
        line-height: 80px;
+       color: white;
    }
+
+
+
+
+   /* Star with lines */
+   .jumbotron .my_star i,
+   #about .my_star i{
+    font-size: 30px;
+    vertical-align: middle;
+  }
