@@ -3,22 +3,18 @@
     background-color: pink;
     border: 1px solid black;
   }
-  
   .debug .row {
     height: 80px;
     /* line-height: 150px; */
   }
-  
   .debug .row [class*="col-"] {
     height: 100%;
     /* text-align:center; */
   }
-  
   .debug .row .row [class*="col-"] {
     background-color: coral;
     border: 2px solid white;
   }
-  
   .debug .row .row {
     padding: 5px;
   }
@@ -58,14 +54,69 @@
       color: white;
       margin-top: 50px;
   }
-  /* Star with lines */
-  .jumbotron .my_star i,
-  #about .my_star i{
-    font-size: 30px;
-    vertical-align: middle;
-  }
-  .jumbotron .my_star::before,
-  .jumbotron .my_star::after{
+
+  /* MAIN */
+
+
+/* Portfolio section */
+    #portfolio{
+      margin-bottom: 30px;
+   }
+    #portfolio img{
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 10px;
+   }
+/* ... */
+
+/* About section */
+    #about{
+      background: linear-gradient(45deg, #00a4bd, #00bda5);
+      margin-bottom: 30px;
+      color: white;
+   }
+    #about p{
+      line-height: 1.6;
+      padding: 15px 0;
+      font-size: 19px;
+   }
+    #about button{
+      margin-bottom: 10px;
+   }
+/* ... */
+
+/* Contact section */
+    #contact{
+      background-color: lightgrey;
+      margin-bottom: 30px;
+   }
+
+   /* FOOTER */
+   footer .footer_top{
+      background-color: #3a546d;
+   }
+   footer .copyright{
+      background-color: #2c3e50;
+      line-height: 80px;
+      color: white;
+   }
+/* ... */
+
+
+
+/* STARS WITH LINES */
+
+  /* Dimensions */
+    .jumbotron .my_star i,
+    #portfolio .my_star i,
+    #about .my_star i,
+    #contact .my_star i{
+      font-size: 25px;
+      vertical-align: middle;
+    }
+    /* Lines */
+    .jumbotron .my_star::before,
+    .jumbotron .my_star::after{
       content: '';
       display: inline-block;
       width: 15%;
@@ -73,40 +124,19 @@
       border-radius: 3px;
       background-color: #fff;
       margin: 0 20px;
-}
-
-  /* MAIN */
-  /* Portfolio section */
-  main section#portfolio{
-      background-color: lightgrey;
-      margin-bottom: 30px;
-}
-  #portfolio .my_star i{
-    font-size: 30px;
-    vertical-align: middle;
-}
-  #portfolio .my_star::before,
-  #portfolio .my_star::after{
-     content: '';
-     display: inline-block;
-     width: 15%;
-     height: 4px;
-     border-radius: 3px;
-     background-color: #333333;
-     margin: 0 20px;
-}
-  #portfolio img{
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-  /* About section */
-   main section#about{
-      background: linear-gradient(45deg, #00a4bd, #00bda5);
-      margin-bottom: 30px;
-      color: white;
-   }
+    }
+    #portfolio .my_star::before,
+    #portfolio .my_star::after,
+    #contact .my_star::before,
+    #contact .my_star::after{
+      content: '';
+      display: inline-block;
+      width: 15%;
+      height: 4px;
+      border-radius: 3px;
+      background-color: #333333;
+      margin: 0 20px;
+    }
     #about .my_star::before,
     #about .my_star::after{
       content: '';
@@ -116,38 +146,5 @@
       border-radius: 3px;
       background-color: #fff;
       margin: 0 20px;
-   }
-   main section#about p{
-     line-height: 1.6;
-     padding: 15px 0;
-     font-size: 19px;
-   }
-   main section#about button{
-     margin-bottom: 10px;
-   }
-
-   /* Contact section */
-   main section#contact{
-       background-color: lightgrey;
-       margin-bottom: 30px;
-   }
-
-   /* FOOTER */
-   footer .footer_top{
-       background-color: #3a546d;
-   }
-   footer .copyright{
-       background-color: #2c3e50;
-       line-height: 80px;
-       color: white;
-   }
-
-
-
-
-   /* Star with lines */
-   .jumbotron .my_star i,
-   #about .my_star i{
-    font-size: 30px;
-    vertical-align: middle;
-  }
+    }      
+/* ... */
