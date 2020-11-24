@@ -22,6 +22,7 @@
 /* ... */
  .download_btn{
      border: 1px solid white;
+     border-radius: 5px;
      padding: 5px 20px;
      color: white;
      font-size: 18px;
@@ -120,7 +121,7 @@
     }
     #contact button{
       margin-top: 10px;
-      background-color:  #1abc9c;
+      background: linear-gradient(45deg, #00a4bd, #00bda5); 
       border: none;
       color: white;
     }
