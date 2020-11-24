@@ -200,7 +200,7 @@
 
 @media screen and (min-width: 768px) {
   #portfolio .box_img:hover::after{
-    opacity: 0.5;
+    opacity: 0.6;
     cursor: pointer;
  }
 }
