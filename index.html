@@ -76,27 +76,27 @@
                         </div>
 
                         <!-- Pictures Portfolio -->
-                        <div class="col-xs-12 col-sm-6 -col-lg-4">
+                        <div class="col-xs-12 col-sm-6 -col-lg-4 box_img">
                             <img src="img/cabin.png" alt="Wooded Home">
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 -col-lg-4">
+                        <div class="col-xs-12 col-sm-6 -col-lg-4 box_img">
                             <img src="img/cake.png" alt="Cake">
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 -col-lg-4">
+                        <div class="col-xs-12 col-sm-6 -col-lg-4 box_img">
                             <img src="img/circus.png" alt="Circus">
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 -col-lg-4">
+                        <div class="col-xs-12 col-sm-6 -col-lg-4 box_img">
                             <img src="img/game.png" alt="Controller Console">
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 -col-lg-4">
+                        <div class="col-xs-12 col-sm-6 -col-lg-4 box_img">
                             <img src="img/safe.png" alt="Cass-lock">
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 -col-lg-4">
+                        <div class="col-xs-12 col-sm-6 -col-lg-4 box_img">
                             <img src="img/submarine.png" alt="Sub Mariner">
                         </div>
                         
@@ -129,7 +129,7 @@
 
                         <!-- Download button About -->
                         <div class="col-xs-12 text-center">
-                            <a href="http://" class="btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i> Download </a>
+                            <a href="http://" class="download_btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i> Download </a>
                         </div>
 
                     </div>
@@ -139,8 +139,9 @@
         <!-- Contact Section -->
         <section id="contact">
                 <div class="container">
+                  <form action="">
                     <div class="row">
-
+                    
                         <!-- Title Contact Me -->
                         <div class="col-xs-12 text-center text-uppercase">
                              <h2>Contact me</h2>
@@ -152,38 +153,38 @@
 
 
                         <!-- Content Contact Me -->
+
                         <div class="col-xs-12">
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                  </div>
-                            </form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address*</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" required>
+                            </div>
                         </div>
 
                         <div class="col-xs-12">
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                  </div>
-                            </form>
+                            <div class="form-group">
+                                <label for="exampleInputText1">Name*</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" required>
+                            </div>
                         </div>
 
                         <div class="col-xs-12">
- 
+                            <label for="exampleInputPassword1">Phone Number*</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
                         </div>
 
                         <div class="col-xs-12">
+                            <label for="exampleTextArea1">Meassage</label>
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
 
                         <!-- Send button Contact Me -->
                         <div class="col-xs-12">
-
+                            <button class="btn btn-default" type="submit">Send</button>
                         </div>
 
                     </div>
+                  </form>
                 </div>
         </section>
 
@@ -193,19 +194,27 @@
     <footer class="text-center">
 
             <!-- Footer Top -->
-            <div class="footer_top debug">
+            <div class="footer_top">
                 <div class="container">
                     <div class="row">
+                        <!-- Location -->
                         <div class="col-xs-12 col-sm-4">
-
+                            <h4 class="text-uppercase">Location</h4>
+                            <p>2215 John Daniel Clark, MO</p>
+                            <p>54243</p>
                         </div>
-        
+                        <!-- Socials -->
                         <div class="col-xs-12 col-sm-4">
-                            
+                            <h4 class="text-uppercase">Around The Web</h4>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-twitter"></i></a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-        
+                        <!-- About -->
                         <div class="col-xs-12 col-sm-4">
-                            
+                            <h4 class="text-uppercase">About Freelancer</h4>
+                            <p>Freelance is free to use, open source Bootstrap theme created by <a href="https://getbootstrap.com/docs/3.3/getting-started/" target="_blank" rel="noopener noreferrer" class="get_bs">Start Bootstrap</a>.</p>
                         </div>
                     </div>
                 </div>

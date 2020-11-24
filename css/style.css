@@ -20,14 +20,13 @@
   }
 
 /* ... */
- .btn{
+ .download_btn{
    border: 1px solid white;
-   padding: 5px 10px;
+   padding: 5px 20px;
    color: white;
-   margin-bottom: 20px;
    font-size: 18px;
  }
- .btn:hover{
+ .download_btn:hover{
    color: #2c3e50;
  }
 /* ... */
@@ -67,6 +66,29 @@
       margin: 10px 0;
       border-radius: 10px;
    }
+    #portfolio .box_img{
+      position: relative;
+   }
+    #portfolio .box_img::after{
+      content: attr(data-box);
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      height: calc(100% - 20px);
+      width: calc(100% - 30px);
+      opacity: 0;
+      background-color: #1abc9c;
+      background-image: url(../img/plus.png);
+      background-position: center;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      transition: 300ms all;
+   }
+    #portfolio .box_img:hover::after{
+      opacity: 0.5;
+      cursor: pointer;
+   }
 /* ... */
 
 /* About section */
@@ -74,31 +96,59 @@
       background: linear-gradient(45deg, #00a4bd, #00bda5);
       margin-bottom: 30px;
       color: white;
+      padding: 20px 0;
    }
     #about p{
       line-height: 1.6;
       padding: 15px 0;
       font-size: 19px;
    }
-    #about button{
-      margin-bottom: 10px;
-   }
 /* ... */
 
 /* Contact section */
     #contact{
-      background-color: lightgrey;
+      background-color: white;
       margin-bottom: 30px;
    }
+    #contact input,
+    #contact textarea{
+      border: none;
+      border-bottom: 1px solid lightgray;
+      border-radius: unset;
+      box-shadow: unset;
+    }
+    #contact input,
+    #contact textarea:hover{
+      cursor: text;
+    }
+    #contact button{
+      margin-top: 10px;
+      background-color:  #1abc9c;
+      border: none;
+      color: white;
+    }
+
 
    /* FOOTER */
-   footer .footer_top{
-      background-color: #3a546d;
+    footer .footer_top{
+       background-color: #3a546d;
+       color: white;
+       line-height: 1.2; 
    }
-   footer .copyright{
-      background-color: #2c3e50;
-      line-height: 80px;
-      color: white;
+   /* Socials */
+    footer .footer_top a.social{
+       color: white;
+       padding: 7px;
+    }
+   /* Link SBS */
+    footer .footer_top .get_bs{
+       color: #1abc9c;
+    }
+    /* Copyright */
+    footer .copyright{
+       background-color: #2c3e50;
+       line-height: 80px;
+       color: white;
    }
 /* ... */
 
@@ -148,3 +198,6 @@
       margin: 0 20px;
     }      
 /* ... */
+
+
+/* @media screen and [] */
