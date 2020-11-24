@@ -202,5 +202,6 @@
   #portfolio .box_img:hover::after{
     opacity: 0.6;
     cursor: pointer;
+    transform: rotate(180deg);
  }
 }
