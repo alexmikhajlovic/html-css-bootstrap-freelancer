@@ -21,13 +21,13 @@
 
 /* ... */
  .download_btn{
-   border: 1px solid white;
-   padding: 5px 20px;
-   color: white;
-   font-size: 18px;
+     border: 1px solid white;
+     padding: 5px 20px;
+     color: white;
+     font-size: 18px;
  }
  .download_btn:hover{
-   color: #2c3e50;
+     color: #2c3e50;
  }
 /* ... */
 
@@ -85,10 +85,7 @@
       border-radius: 10px;
       transition: 300ms all;
    }
-    #portfolio .box_img:hover::after{
-      opacity: 0.5;
-      cursor: pointer;
-   }
+    
 /* ... */
 
 /* About section */
@@ -200,4 +197,9 @@
 /* ... */
 
 
-/* @media screen and [] */
+@media screen and (min-width: 768px) {
+  #portfolio .box_img:hover::after{
+    opacity: 0.5;
+    cursor: pointer;
+ }
+}
